@@ -1,0 +1,53 @@
+.sidebar {
+    width: 71px;
+    height: 100vh;
+    background-color: #1c1c1e;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.sidebar-button {
+    font-family: 'AvoidanceGenevra', sans-serif;
+    font-style: italic;
+    margin: 19px;
+    width: 34px;
+    color: white;
+    background-color: #424242;
+}
+
+.sidebar-icons {
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 28px;
+    color: #878789;
+}
+
+.sidebar-image {
+    margin-top: 40px;
+    width: 28px;
+}
+
+.seperation {
+    margin: 17px;
+    opacity: 20%;
+    width: 38px;
+    background-color: white;
+}
+
+.icon-item:hover .sidebar-icons {
+    color: white;
+    cursor: pointer;
+}
+
+.icon-item {
+    transition: background-color 0.3s ease-in-out;
+}
+
+@font-face {
+    font-family: 'AvoidanceGenevra';
+    src: url('AvoidanceGenevra-Italic.ttf') format('truetype');
+}

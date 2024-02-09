@@ -1,0 +1,189 @@
+.drone-details-heading {
+    font-family: 'AvoidanceGenevra';
+    font-size: 14px;
+    color: #ffff;
+}
+
+.drone-details-paragraph {
+    font-family: 'AvoidanceGenevra';
+    font-size: 12px;
+    color: #7E7E80
+}
+
+.line {
+    opacity: 20%;
+    width: 100%;
+    background-color: white;
+    margin-top: 0.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.battery-status {
+    font-family: 'AvoidanceGenevra';
+    font-size: 12px;
+    color: #ffff;
+}
+
+.battery-status>p {
+    font-family: 'AvoidanceGenevra';
+    font-size: 10px;
+    color: #7E7E80
+}
+
+#altitude {
+    font-family: 'AvoidanceGenevra';
+    font-size: 12px;
+    float: right;
+    color: #ffff;
+}
+
+#battery-percentage {
+    font-family: 'AvoidanceGenevra';
+    font-size: 12px;
+    float: right;
+    color: #F1DF56;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.circle-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 20px;
+}
+
+.circle-button {
+    width: 40px;
+    height: 40px;
+    background-color: #1C1C1E;
+    color: #878789;
+    border: rgb(77, 75, 75) 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.circle-button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    width: 140px;
+    margin: 0px auto;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    appearance: none;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .track {
+    position: absolute;
+    height: 10px;
+    /* background: #4caf50; */
+    border-radius: 5px;
+    width: 50%;
+    top: 0;
+    left: 0;
+  }
+  
+  .thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tooltip {
+    color: white;
+    font-size: 12px;
+  }
+  
+  .mark {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: #333;
+  }
+  
+  .mark1 {
+    left: 0%;
+  }
+  
+  .mark2 {
+    left: 50%;
+  }
+  
+  .mark3 {
+    left: 100%;
+  }
+  
+  .drone-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .drone-details-text {
+        flex: 1;
+        max-width: 60%; /* Adjust this value based on your design */
+    }
+
+    .drone-details-image {
+        flex: 1;
+        max-width: 30%; /* Adjust this value based on your design */
+        height: auto;
+        margin-left: 20px; /* Adjust the margin based on your design */
+    }
+
+    .drone-details-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Add your responsive styles here */
+
+    @media screen and (max-width: 768px) {
+        .drone-details-container {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .drone-details-image {
+            margin: 0; /* Remove margin on smaller screens */
+            max-width: 100%; /* Full width on smaller screens */
+        }
+    }

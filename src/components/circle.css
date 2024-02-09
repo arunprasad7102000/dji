@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circle {
+    /* Add styling for the circle icon, for example, setting a width and height */
+    width: 30px;
+    height: 30px;
+  }
+  
+  .slider-container {
+    flex: 2; /* Adjust the width of the slider container as needed */
+    margin: 0 10px; /* Adjust the margin between the circle icons and the slider */
+  }
+  
